@@ -1,0 +1,95 @@
+.container{
+    display:flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.header{
+    background-color: #8F57fD;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header__img{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.header__menu{
+    margin-right : 30px;
+}
+
+.header__menu ul {
+    display:none; 
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width:100px;
+    text-align: right;
+    margin: 0px 0px 0px -10px;
+}
+
+.header__menu:hover ul, ul:hover{
+    display:block;
+}
+
+.header__menu li a {
+    color: white;
+    text-decoration:none;
+}
+
+.header__menu li a:hover{
+    text-decoration: underline;
+}
+
+.header__menu li{
+    margin: 10px 0px;
+}
+
+.header__menu--profile{
+    margin-right: 60px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    color:white;
+    margin-top:15px
+}
+
+.header__menu--profile img{
+    margin-right:4px;
+}
+
+.main{
+    width: 100%;
+    display:flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top:100px;
+}
+
+.main__title{
+    color:white;
+    font-size:25px;
+}
+
+.input {
+    background-color: rgba(255,255,255,0.1);
+    border:2px solid white;
+    border-radius:30px;
+    color:white;
+    font-family: 'Muli', sans-serif;
+    font-size:16px;
+    height: 50px;
+    padding:0px 20px;
+    width:70%;
+    outline: none;
+}
+::placeholder{
+    color:white;
+}

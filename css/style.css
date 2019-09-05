@@ -1,0 +1,43 @@
+/*p::first-letter{
+    color:red;
+    font-size: 30px;
+}
+p:nth-child(2n){
+    color:blue;
+}
+p:nth-child(2n+1){
+    color:orange;
+}*/
+
+.header-box {
+    background: pink;
+    padding: 10px; 
+}
+
+.header-box button{
+    font-size: 20px;
+}
+
+.input-nombre{
+    font-size: 20px;
+}
+
+.body-table{
+    font-size: 20px;
+    background: purple;
+    color:white;
+    padding: 10px;
+}
+
+.item{
+    border-bottom: 1px solid black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item div, a{
+    
+    margin: 5px;
+    padding: 5px;
+}
