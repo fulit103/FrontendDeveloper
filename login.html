@@ -11,9 +11,126 @@
 <style>
     body{
         margin: 0px;
-        background-color: #8F57fD;
+        
         font-family: 'Muli', sans-serif;
+        display: flex;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-flow: row wrap;
+        /*background: linear-gradient(to top, rgba(143,88,253,0.9) 50%, rgba(143,88,253,0.3) 100% );*/
+        background: linear-gradient(#21C08B,#AB88FF)
     }
+
+    .login{
+        width: 100%;
+        align-self: center;
+        margin: 60px 0px;
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .login__container{
+        border-radius: 25px;
+        border: 2px solid white;
+        padding: 30px;
+        color:white;
+        
+        width: 350px;
+
+        padding: 20px 50px;
+        box-sizing: border-box; 
+    }
+
+    .login__form{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .input{
+        margin: 6px 0px;
+        outline: none;
+        background-color: rgba(255,255,255,0);
+        border: none;
+        border-bottom:2px solid white;
+
+        color:white;
+        font-family: 'Muli', sans-serif;
+        font-size:16px;
+        height: 30px;
+        padding:5px 20px;
+
+        
+    }
+
+    ::placeholder{
+        color:white;
+    }
+
+    .button{
+        border-radius: 25px;
+        height: 40px;
+        margin: 15px 0px;
+        background-color: rgba(255,255,255,0.3);
+        color:white;
+        font-size: 15px;
+        transition: 1000ms background-color;
+        
+    }
+    
+    .button:hover{
+        background-color: rgba(255,255,255,0.1);    
+        cursor:pointer;
+    }
+
+    .login__container--remember-me{
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+        margin-bottom: 60px;
+    }
+
+    .login__container--remember-me input{
+        font-size: 25px;
+        margin:0px;
+        margin-right: 4px;
+    }
+
+    .login_container--social-media div{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-top:10px;
+        font-size: 14px;
+    }
+
+    .login_container--social-media div label{
+        cursor: pointer;
+        margin-left:5px;
+    }
+
+    .login__container--register{
+        margin-top:50px;
+        font-size: 14px;
+    }
+
+    a{
+        color:white;
+        text-decoration: none;
+    }
+
+    .footer{
+        display: flex;
+        
+    }
+    .footer a{
+        margin: 20px 20px;
+    }
+
 </style>
 <body>
     <header class="header">
@@ -25,7 +142,7 @@
             <form class="login__form">
                 <input type="text" class="input" placeholder="Correo">
                 <input type="password" class="input" placeholder="Contraseña">
-                <button class="button">Iniciar sesion</button>
+                <button class="button">Iniciar sesión</button>
                 <div class="login__container--remember-me">
                     <label >
                         <input type="checkbox" id="caja1" value="checkbox">Recuerdame
@@ -34,8 +151,14 @@
                 </div>                
             </form>
             <section class="login_container--social-media">
-                <div><img src="" alt="Google">Inicia sesion con Google</div>  
-                <div><img src="" alt="Twitter">Inicia sesion con Facebook</div>  
+                <div>
+                    <img src="./img/icon-google.png" alt="Google" width="30">
+                    <label>Inicia sesion con Google</label>
+                </div>  
+                <div>
+                    <img src="./img/icon-twitter.png" alt="Twitter" width="30">
+                    <label>Inicia sesion con Facebook</label>
+                </div>  
             </section>
             <p class="login__container--register">No tienes ninguna cuenta <a href="/">Regístrate</a></p>
         </section>

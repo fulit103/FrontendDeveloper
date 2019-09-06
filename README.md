@@ -7,3 +7,4 @@ Practicando con platzi, escuela de javascript, reaprendiendo
 - Descargar imágenes: https://www.pexels.com/
 - Guia de flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - Guia de grid css: https://css-tricks.com/snippets/css/complete-guide-grid/
+- Guia de colores: https://colorhunt.co
