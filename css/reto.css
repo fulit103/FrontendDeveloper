@@ -1,0 +1,18 @@
+a{
+    color:white;
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    background: #AB88FF;
+    height: 100%;
+    width: 100%;
+}
+.footer a{
+    margin: 20px 20px;
+}
+
+a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,137 @@
+
+    .login{
+        width: 100%;
+        align-self: center;
+        margin: 60px 0px;
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: calc(100vh -200px)
+    }
+
+
+    .login__container{
+        border-radius: 40px;
+        border: 2px solid white;
+       
+        color:white;
+        
+        width: 350px;
+
+        padding: 60px 50px 20px;
+        box-sizing: border-box; 
+        background-color: rgba(255,255,255,0.1);
+        box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.1)
+    }
+
+    .login__form{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .input{
+        margin: 6px 0px;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        border-bottom:2px solid white;
+
+        color:white;
+        font-family: 'Muli', sans-serif;
+        font-size:16px;
+        height: 30px;
+        padding:5px 20px;
+
+        
+    }
+
+    ::placeholder{
+        color:white;
+    }
+
+    .button{
+        border-radius: 25px;
+        height: 40px;
+        margin: 15px 0px;
+        background-color: rgba(255,255,255,0.3);
+        color:white;
+        font-size: 15px;
+        transition: 1000ms background-color;
+        letter-spacing: 1px;
+        border: 0px;
+    }
+    
+    .button:hover{
+        background-color: rgba(255,255,255,0.1);    
+        cursor:pointer;
+    }
+
+    .login__container--remember-me{
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+        margin-bottom: 60px;
+    }
+
+    .login__container--remember-me input{
+        font-size: 25px;
+        margin:0px;
+        margin-right: 4px;
+    }
+
+    .login_container--social-media div{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-top:10px;
+        font-size: 14px;
+    }
+
+    .login_container--social-media div label{
+        cursor: pointer;
+        margin-left:5px;
+    }
+
+    .login__container--register{
+        margin-top:50px;
+        font-size: 14px;
+    }
+
+    a{
+        color:white;
+        text-decoration: none;
+    }
+
+    .footer{
+        display: flex;
+        background: #AB88FF;
+        height: 100%;
+        width: 100%;
+    }
+    .footer a{
+        margin: 20px 20px;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    @media only screen and (max-width:600px){
+        .login__container{
+            background-color: transparent;
+            border:none;
+            box-shadow: none;
+            padding-top:20px; 
+        }
+        .footer{
+            flex-direction: column;
+            width: 100%;
+            
+        }
+        .footer a{
+            margin: 10px 10px;
+            text-align: center;
+        }
+    }
