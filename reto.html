@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reto 404</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/reto.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        margin: 0px;        
+        font-family: 'Muli', sans-serif;
+        width: 100%;
+    }
+    .notfound{
+        background: linear-gradient(#21C08B,#AB88FF);
+        min-height: calc(100vh - 138px);
+        display: flex;
+        
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .notfound{
+        color:white;
+        padding-top:100px;
+        box-sizing: border-box; 
+        
+    }
+
+    @keyframes latido {
+        0%, 30% { transform: scale(1); }
+        30%, 60% { transform: scale(1.5); }
+        60%, 100% { transform: scale(1); }
+    }
+
+    .notfound h1{
+        font-size: 50px;
+        margin-bottom: 10px;
+        transition: 450ms all;
+        animation: latido 4s infinite linear;
+    }
+
+    .notfound h1:hover{
+        transform: scale(1.5)
+    }
+
+    .notfound p{
+        margin: 0px;
+    }
+
+    .header{
+        background: #21C08B;
+    }
+</style>
+<body>
+    <header class="header">
+        <img class="header__img" src="./img/logo-platzi-video-BW2.png" />
+    </header>
+    <section class="notfound">
+        
+            <h1>404</h1>
+            <p>Página no encontrada</p>
+        
+    </section>
+    <footer class="footer">
+        <a href="/">Terminos de uso</a>
+        <a href="/">Declaracion de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+</body>
+</html>
